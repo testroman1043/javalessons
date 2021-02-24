@@ -5,10 +5,12 @@ public class Main
     public static void main(String[] args)
     {
 
-        reflectNumbers(); // task1
-        createAndFillArr(); // task2
-        multiplyElement(); // task3
-        findMaxMin(); // task 5
+//        reflectNumbers(); // task1
+//        createAndFillArr(); // task2
+//        multiplyElement(); // task3
+//        findMaxMin(); // task 5
+//        diagonallyOne(); // task 4
+
 
     }
 
@@ -37,11 +39,7 @@ public class Main
             emptyArr[i] = numbersForFill[i];
         }
         System.out.println(Arrays.toString(emptyArr));
-
     }
-
-
-
 
 
     public static void multiplyElement()
@@ -56,10 +54,6 @@ public class Main
         }
         System.out.println(Arrays.toString(arrayForMultiply));
     }
-
-
-
-
 
 
     public static void findMaxMin()
@@ -80,11 +74,25 @@ public class Main
         }
         System.out.println("Минимальное число в массиве это " + minTmp);
         System.out.println("Максимальное число в массиве это " + maxTmp);
-
-
     }
 
+    public static void diagonallyOne()
+    {
+        int[][] table = new int [4][4];
+        for (int i = 0; i < table.length; i++)
+        {
+            table[i][i]=1;
+        }
 
+//        for (int i = 0; i < table.length; i++)
+//        {
+//            for (int j = 0; j < table[i].length; j++)
+//            {
+//                System.out.println(table[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+    }
 
 
 
